@@ -9,7 +9,6 @@
   </ul>
 </div>
 </template>
-
 <script>
 import { HTTP } from '@/httpcommon.js'
 import axios from 'axios'
