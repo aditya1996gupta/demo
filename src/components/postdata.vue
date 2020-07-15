@@ -8,6 +8,7 @@
     </li>
   </ul>
 </div>
+
 </template>
 <script>
 import { HTTP } from '@/httpcommon.js'
