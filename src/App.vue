@@ -1,18 +1,17 @@
 <template>
 <div class='app'>
-<router-link to="/">Home</router-link>
+<div id='a'>
+<router-link to="/">Home </router-link> ||
+<router-link to="about">demo</router-link>
+</div>
 <router-view />
-<ConnectivityExample />
-<vue-snotify></vue-snotify>
 </div>
 </template>
 
 <script>
-import ConnectivityExample from './components/ConnectivityExample'
 export default {
   name: 'app',
   components: {
-    ConnectivityExample
   }
 }
 </script>
@@ -22,8 +21,14 @@ export default {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+   color: #2c3e50;
+   margin-top: 20px;
+}
+#a{
+display: flex;
+justify-content: center;
+ left: 0;
+ top: 0;
+ width: 100vw;
 }
 </style>

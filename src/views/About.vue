@@ -1,22 +1,23 @@
 <template>
-<div class="app">
-    <!-- <h1>Hooks as event in vue</h1>
-    Hi fly! Check out the console and the code around!
-    <Child @hook:mounted="childMounted"/>
-    <parent /> -->
+  <div class="Home">
+  <br />
+  <h1>Proper Form Handling in Vue.js</h1>
+  <formhgood /><br />
+  <formhbad />
+  <notify />
   </div>
 </template>
 
 <script>
-// import parent from '@/components/parent'
-// import Child from './Child'
+import formhgood from '@/components/formhgood.vue'
+import formhbad from '@/components/formhbad.vue'
+import notify from '@/components/notify.vue'
 export default {
-  name: 'app',
-  // components: { Child, parent },
-  methods: {
-    childMounted () {
-      console.log('Child was mounted')
-    }
+  name: 'Home',
+  components: {
+    notify,
+    formhgood,
+    formhbad
   }
 }
 </script>

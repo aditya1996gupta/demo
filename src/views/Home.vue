@@ -1,23 +1,18 @@
 <template>
   <div class="Home">
-  <br />
-  <h1>Proper Form Handling in Vue.js</h1>
-  <formhgood /><br />
-  <formhbad />
-  <notify />
+  <dataget />
+  <postdata />
   </div>
 </template>
 
 <script>
-import formhgood from '@/components/formhgood.vue'
-import formhbad from '@/components/formhbad.vue'
-import notify from '@/components/notify.vue'
+import dataget from '@/components/dataget'
+import postdata from '@/components/postdata'
 export default {
   name: 'Home',
   components: {
-    notify,
-    formhgood,
-    formhbad
+    dataget,
+    postdata
   }
 }
 </script>
